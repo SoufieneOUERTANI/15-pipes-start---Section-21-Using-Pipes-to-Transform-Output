@@ -42,4 +42,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
         "node_modules/bootstrap/dist/css/bootstrap.min.css",
           "src/styles.css"
         ,
+
+## 328. Using Pipes : uppercase, date
+
+    <strong>{{ server.name }}</strong> |
+    {{ server.instanceType | uppercase}} | 
+    {{ server.started | date}}
     
