@@ -53,4 +53,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
     https://angular.dev/api
 
-    {{ server.started | date:'dd/MM/yyyy'}}    
+    {{ server.started | date:'dd/MM/yyyy'}} 
+
+## 331. Chaining Multiple Pipe
+The order maybe important
+
+    {{ server.started | date:'fullDate' | uppercase }}
