@@ -76,3 +76,24 @@ The order maybe important
     transform(value: any, limit : number, dot : string) {
 
     <strong>{{ server.name | shorten:15:' ...'}}</strong> |
+
+## 334. Example: Creating a Filter Pipe
+
+    ng g p filter
+
+    <input type="text" [(ngModel)]="filetredStatus">
+
+    *ngFor="let server of servers | filter:filetredStatus:'status'"
+
+    transform(value: any, filterString:string, propName : string): any {
+      if(value.length===0){
+        return value;
+      }
+      const returnArray:any =[];
+      for(const item of value){
+        if(item[propName] ===filterString){
+          returnArray.push(item)
+        }
+      }
+      return returnArray;
+    }
