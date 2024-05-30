@@ -70,3 +70,9 @@ The order maybe important
       AppComponent,
       ShortenPipe
     ],
+
+## 333. Parametrizing a Custom Pipe
+
+    transform(value: any, limit : number, dot : string) {
+
+    <strong>{{ server.name | shorten:15:' ...'}}</strong> |
