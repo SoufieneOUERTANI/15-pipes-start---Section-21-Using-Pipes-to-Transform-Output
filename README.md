@@ -48,4 +48,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
     <strong>{{ server.name }}</strong> |
     {{ server.instanceType | uppercase}} | 
     {{ server.started | date}}
-    
+
+##  329. Parametrizing Pipes
+
+    https://angular.dev/api
+
+    {{ server.started | date:'dd/MM/yyyy'}}    
