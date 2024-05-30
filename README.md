@@ -59,3 +59,14 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 The order maybe important
 
     {{ server.started | date:'fullDate' | uppercase }}
+
+## 332. Creating a Custom Pipe ; @Pipe, implements PipeTransform
+
+    @Pipe({name:'shorten'})
+    export class ShortenPipe implements PipeTransform{
+
+
+    declarations: [
+      AppComponent,
+      ShortenPipe
+    ],
