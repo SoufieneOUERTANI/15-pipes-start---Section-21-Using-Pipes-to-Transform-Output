@@ -97,3 +97,15 @@ The order maybe important
       }
       return returnArray;
     }
+
+## 335. Pure and Impure Pipes (or: How to "fix" the Filter Pipe)
+
+    @Pipe({
+      name: 'filter',
+      pure : false
+    })
+
+pure : false => 
+
+  - updates the page display whenever the data changes, even when the filter does not change
+  - else the page display changes only if the filter changes
