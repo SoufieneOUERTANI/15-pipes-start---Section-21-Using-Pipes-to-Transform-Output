@@ -109,3 +109,16 @@ pure : false =>
 
   - updates the page display whenever the data changes, even when the filter does not change
   - else the page display changes only if the filter changes
+
+
+ ## 336. Understanding the "async" Pipe
+
+    appStatus = new Promise ((resolve)=>{
+      setTimeout( ()=> {
+        resolve('stable')
+      },2000)
+    });
+
+    <h2>App status : {{appStatus | async}}</h2>
+
+Without async, as the data is a promise object, that data will not be displayed
