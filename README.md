@@ -122,3 +122,6 @@ pure : false =>
     <h2>App status : {{appStatus | async}}</h2>
 
 Without async, as the data is a promise object, that data will not be displayed
+
+## 336-After Assignement 8 - Pipes : reverse a word , sort a list 
+
